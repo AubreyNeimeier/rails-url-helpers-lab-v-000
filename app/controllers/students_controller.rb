@@ -10,7 +10,7 @@ class StudentsController < ApplicationController
   end
 
   def activate
-    set_student.toggle(:activate)
+    set_student.switch_status
     redirect_to student_path
   end
 
